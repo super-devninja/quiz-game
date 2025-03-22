@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-image: url('/public/bg.jpg'); /* Direkt aus dem "public"-Ordner */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+html, body {
+    @apply h-screen w-screen flex flex-col items-center justify-center;
+}
+
+
+@font-face {
+    font-family: 'August Script Bold';
+    src: url('/public/fonts/August_Script_Bold_Free.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.font-august {
+    font-family: 'August Script Bold', cursive;
+}
+
+@font-face {
+    font-family: 'Playwrite US Modern';
+    src: url('/public/fonts/PlaywriteUSModern-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-playwrite {
+    font-family: 'Playwrite US Modern', cursive;
+}
