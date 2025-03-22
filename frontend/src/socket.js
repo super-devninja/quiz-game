@@ -1,7 +1,7 @@
 // src/socket.js
 import {io} from 'socket.io-client';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:50000';
+const BACKEND_URL = 'https://quiz-game-gx5f.onrender.com' ;
 
 const socket = io(BACKEND_URL, {
     reconnectionDelay: 1000,
